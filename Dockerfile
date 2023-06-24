@@ -1,4 +1,4 @@
-FROM docker.io/library/node:20-alpine
+FROM docker.io/library/node:20
 RUN corepack enable
 RUN corepack prepare pnpm@latest --activate
 
