@@ -26,4 +26,4 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: ithundxr/modstats:latest
+          tags: ghcr.io/ithundxr/modstats:latest
