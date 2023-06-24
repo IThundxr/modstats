@@ -3,7 +3,7 @@ version: "3.5"
 services:
     modtracker:
         container_name: Mod Stats InfluxDB
-        image: 
+        image: ghcr.io/ithundxr/modstats:latest
         restart: unless-stopped
         environment:
             - CFKEY="mycftoken"
