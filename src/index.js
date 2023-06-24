@@ -10,7 +10,7 @@ const url = process.env.INFLUXDB_URL;
 const client = new InfluxDB({ url, token });
 
 // Check if all required environment variables are set
-checkenv();
+checkenv;
 
 // Schedule cron job
 cron.schedule(process.env.CRON_SCHEDULE, () => {
