@@ -1,0 +1,16 @@
+version: "3.5"
+
+services:
+    modtracker:
+        container_name: Mod Stats InfluxDB
+        image: 
+        restart: unless-stopped
+        environment:
+            - CFKEY="mycftoken"
+            - INFLUXDB_TOKEN="myinfluxdbtoken"
+            - INFLUXDB_URL="https://influxdb.example.com"
+            - INFLUXDB_ORG=influxdb
+            - INFLUXDB_BUCKET=ModStatsTracker
+            - CRON_SCHEDULE="0 * * * *"
+        volumes:
+            - ./modstats:/app/src/config
