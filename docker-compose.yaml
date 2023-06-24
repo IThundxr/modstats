@@ -2,7 +2,7 @@ version: "3.5"
 
 services:
   modtracker:
-    container_name: Mod Stats InfluxDB
+    container_name: mod-stats-influxdb
     image: ghcr.io/ithundxr/modstats:latest
     restart: unless-stopped
     environment:
