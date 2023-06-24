@@ -8,9 +8,9 @@ services:
     environment:
       - CFKEY="mycftoken"
       - INFLUXDB_TOKEN="myinfluxdbtoken"
-      - INFLUXDB_URL="https://influxdb.example.com"
+      - INFLUXDB_URL=https://influxdb.example.com
       - INFLUXDB_ORG=influxdb
       - INFLUXDB_BUCKET=ModStatsTracker
-      - CRON_SCHEDULE="0 * * * *"
+      - CRON_SCHEDULE=0 * * * *
     volumes:
       - ./modstats:/app/src/config
